@@ -37,4 +37,13 @@ python import_logging.py
 bash
 python import_logging.py
 
+### 7. Configure Telegram Bot for Alerts 
+1. Buat bot di BotFather dan ambil token-nya.
+2. Tambahkan TELEGRAM_TOKEN dan TELEGRAM_CHAT_ID ke file .env.
+3. Pastikan webhook alert sudah aktif di import_logging.py.
 
+### 8. Run Telegram Alert Script
+```bash
+cd DVWA-nginx-ModSecurity/script
+python modsec-logging-tele-1.py
+```

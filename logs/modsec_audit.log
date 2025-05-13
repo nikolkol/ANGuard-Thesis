@@ -2324,3 +2324,259 @@ ModSecurity: Access denied with code 403 (phase 1). Matched "Operator `Rx' with 
 
 ---Lz1cahZM---Z--
 
+---h5HZ8hOc---A--
+[02/Apr/2025:00:08:27 +0700] 174352730763.985661 172.20.0.1 55404 172.20.0.4 80
+---h5HZ8hOc---B--
+GET /vulnerabilities/sqli/?id=%27+OR+1%23&Submit=Submit HTTP/1.1
+Sec-Fetch-User: ?1
+sec-ch-ua: "Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-platform: "Windows"
+Referer: http://localhost:9090/vulnerabilities/sqli/?id=https%3A%2F%2Fvt.tiktok.com%2FZSFmMceY1%2F&Submit=Submit
+Upgrade-Insecure-Requests: 1
+sec-ch-ua-mobile: ?0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Mode: navigate
+Connection: keep-alive
+Host: localhost:9090
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Cookie: opencti_session=s%3AaCOYjt0QPk9qMMKIeoBNnHcW7iGvQNGw.kHRS%2FNOFseFTPxkgEAzhPV%2Bs4GgXN3pbp0Pl1vXwHmM; PHPSESSID=djua0bau91j8a2qk2frvmorbs7; security=low
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,id;q=0.7
+
+---h5HZ8hOc---D--
+
+---h5HZ8hOc---E--
+<html>\x0d\x0a<head><title>403 Forbidden</title></head>\x0d\x0a<body>\x0d\x0a<center><h1>403 Forbidden</h1></center>\x0d\x0a<hr><center>nginx/1.25.2</center>\x0d\x0a</body>\x0d\x0a</html>\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a
+
+---h5HZ8hOc---F--
+HTTP/1.1 403
+Server: nginx/1.25.2
+Date: Tue, 01 Apr 2025 17:08:27 GMT
+Content-Length: 555
+Content-Type: text/html
+Connection: keep-alive
+
+---h5HZ8hOc---H--
+ModSecurity: Warning. detected SQLi using libinjection. [file "/etc/nginx/modsec/coreruleset-3.3.4/rules/REQUEST-942-APPLICATION-ATTACK-SQLI.conf"] [line "46"] [id "942100"] [rev ""] [msg "SQL Injection Attack Detected via libinjection"] [data "Matched Data: s&1c found within ARGS:id: ' OR 1#"] [severity "2"] [ver "OWASP_CRS/3.3.4"] [maturity "0"] [accuracy "0"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-sqli"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/248/66"] [tag "PCI/6.5.2"] [hostname "172.20.0.4"] [uri "/vulnerabilities/sqli/"] [unique_id "174352730763.985661"] [ref "v30,7"]
+ModSecurity: Access denied with code 403 (phase 2). Matched "Operator `Ge' with parameter `5' against variable `TX:ANOMALY_SCORE' (Value: `5' ) [file "/etc/nginx/modsec/coreruleset-3.3.4/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "81"] [id "949110"] [rev ""] [msg "Inbound Anomaly Score Exceeded (Total Score: 5)"] [data ""] [severity "2"] [ver "OWASP_CRS/3.3.4"] [maturity "0"] [accuracy "0"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"] [hostname "172.20.0.4"] [uri "/vulnerabilities/sqli/"] [unique_id "174352730763.985661"] [ref ""]
+
+---h5HZ8hOc---I--
+
+---h5HZ8hOc---J--
+
+---h5HZ8hOc---Z--
+
+---EQkrDnuC---A--
+[02/Apr/2025:00:08:29 +0700] 174352730928.768354 172.20.0.1 55404 172.20.0.4 80
+---EQkrDnuC---B--
+GET /vulnerabilities/sqli/?id=%27+OR+1%23&Submit=Submit HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-platform: "Windows"
+Referer: http://localhost:9090/vulnerabilities/sqli/?id=https%3A%2F%2Fvt.tiktok.com%2FZSFmMceY1%2F&Submit=Submit
+Upgrade-Insecure-Requests: 1
+sec-ch-ua-mobile: ?0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"
+Sec-Fetch-User: ?1
+Sec-Fetch-Mode: navigate
+Connection: keep-alive
+Host: localhost:9090
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Cookie: opencti_session=s%3AaCOYjt0QPk9qMMKIeoBNnHcW7iGvQNGw.kHRS%2FNOFseFTPxkgEAzhPV%2Bs4GgXN3pbp0Pl1vXwHmM; PHPSESSID=djua0bau91j8a2qk2frvmorbs7; security=low
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,id;q=0.7
+
+---EQkrDnuC---D--
+
+---EQkrDnuC---E--
+<html>\x0d\x0a<head><title>403 Forbidden</title></head>\x0d\x0a<body>\x0d\x0a<center><h1>403 Forbidden</h1></center>\x0d\x0a<hr><center>nginx/1.25.2</center>\x0d\x0a</body>\x0d\x0a</html>\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a<!-- a padding to disable MSIE and Chrome friendly error page -->\x0d\x0a
+
+---EQkrDnuC---F--
+HTTP/1.1 403
+Server: nginx/1.25.2
+Date: Tue, 01 Apr 2025 17:08:29 GMT
+Content-Length: 555
+Content-Type: text/html
+Connection: keep-alive
+
+---EQkrDnuC---H--
+ModSecurity: Warning. detected SQLi using libinjection. [file "/etc/nginx/modsec/coreruleset-3.3.4/rules/REQUEST-942-APPLICATION-ATTACK-SQLI.conf"] [line "46"] [id "942100"] [rev ""] [msg "SQL Injection Attack Detected via libinjection"] [data "Matched Data: s&1c found within ARGS:id: ' OR 1#"] [severity "2"] [ver "OWASP_CRS/3.3.4"] [maturity "0"] [accuracy "0"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-sqli"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/152/248/66"] [tag "PCI/6.5.2"] [hostname "172.20.0.4"] [uri "/vulnerabilities/sqli/"] [unique_id "174352730928.768354"] [ref "v30,7"]
+ModSecurity: Access denied with code 403 (phase 2). Matched "Operator `Ge' with parameter `5' against variable `TX:ANOMALY_SCORE' (Value: `5' ) [file "/etc/nginx/modsec/coreruleset-3.3.4/rules/REQUEST-949-BLOCKING-EVALUATION.conf"] [line "81"] [id "949110"] [rev ""] [msg "Inbound Anomaly Score Exceeded (Total Score: 5)"] [data ""] [severity "2"] [ver "OWASP_CRS/3.3.4"] [maturity "0"] [accuracy "0"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-generic"] [hostname "172.20.0.4"] [uri "/vulnerabilities/sqli/"] [unique_id "174352730928.768354"] [ref ""]
+
+---EQkrDnuC---I--
+
+---EQkrDnuC---J--
+
+---EQkrDnuC---Z--
+
+---35jFVIHB---A--
+[02/Apr/2025:00:14:19 +0700] 174352765982.220809 172.20.0.1 45186 172.20.0.4 80
+---35jFVIHB---B--
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+Sec-Fetch-Site: none
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+sec-ch-ua-mobile: ?0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"
+Sec-Fetch-User: ?1
+Sec-Fetch-Mode: navigate
+Connection: keep-alive
+Host: localhost:9090
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Cookie: opencti_session=s%3AaCOYjt0QPk9qMMKIeoBNnHcW7iGvQNGw.kHRS%2FNOFseFTPxkgEAzhPV%2Bs4GgXN3pbp0Pl1vXwHmM; PHPSESSID=djua0bau91j8a2qk2frvmorbs7; security=low
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,id;q=0.7
+
+---35jFVIHB---D--
+
+---35jFVIHB---F--
+HTTP/1.1 403
+
+---35jFVIHB---H--
+ModSecurity: Access denied with code 403 (phase 1). Matched "Operator `Rx' with parameter `172.20.0.1' against variable `REMOTE_ADDR' (Value: `172.20.0.1' ) [file "/etc/nginx/modsec/modsecurity.conf"] [line "19"] [id "1000003"] [rev ""] [msg "Blocked Docker Host IP"] [data ""] [severity "0"] [ver ""] [maturity "0"] [accuracy "0"] [hostname "172.20.0.4"] [uri "/"] [unique_id "174352765982.220809"] [ref "o0,10v0,10"]
+
+---35jFVIHB---I--
+
+---35jFVIHB---J--
+
+---35jFVIHB---Z--
+
+---iAGKlqq4---A--
+[24/Apr/2025:14:48:30 +0700] 174548091063.451044 172.20.0.1 55392 172.20.0.4 80
+---iAGKlqq4---B--
+GET / HTTP/1.1
+Sec-Fetch-User: ?1
+sec-ch-ua: "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+Sec-Fetch-Site: none
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+sec-ch-ua-mobile: ?0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Mode: navigate
+Connection: keep-alive
+Host: localhost:9090
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,id;q=0.7
+
+---iAGKlqq4---D--
+
+---iAGKlqq4---F--
+HTTP/1.1 403
+
+---iAGKlqq4---H--
+ModSecurity: Access denied with code 403 (phase 1). Matched "Operator `Rx' with parameter `172.20.0.1' against variable `REMOTE_ADDR' (Value: `172.20.0.1' ) [file "/etc/nginx/modsec/modsecurity.conf"] [line "19"] [id "1000003"] [rev ""] [msg "Blocked Docker Host IP"] [data ""] [severity "0"] [ver ""] [maturity "0"] [accuracy "0"] [hostname "172.20.0.4"] [uri "/"] [unique_id "174548091063.451044"] [ref "o0,10v0,10"]
+
+---iAGKlqq4---I--
+
+---iAGKlqq4---J--
+
+---iAGKlqq4---Z--
+
+---Uwchen7V---A--
+[24/Apr/2025:14:48:30 +0700] 174548091047.194695 172.20.0.1 55392 172.20.0.4 80
+---Uwchen7V---B--
+GET /favicon.ico HTTP/1.1
+Referer: http://localhost:9090/
+sec-ch-ua-platform: "Windows"
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-ch-ua: "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Host: localhost:9090
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,id;q=0.7
+
+---Uwchen7V---D--
+
+---Uwchen7V---F--
+HTTP/1.1 403
+
+---Uwchen7V---H--
+ModSecurity: Access denied with code 403 (phase 1). Matched "Operator `Rx' with parameter `172.20.0.1' against variable `REMOTE_ADDR' (Value: `172.20.0.1' ) [file "/etc/nginx/modsec/modsecurity.conf"] [line "19"] [id "1000003"] [rev ""] [msg "Blocked Docker Host IP"] [data ""] [severity "0"] [ver ""] [maturity "0"] [accuracy "0"] [hostname "172.20.0.4"] [uri "/favicon.ico"] [unique_id "174548091047.194695"] [ref "o0,10v0,10"]
+
+---Uwchen7V---I--
+
+---Uwchen7V---J--
+
+---Uwchen7V---Z--
+
+---XoElBuhX---A--
+[24/Apr/2025:15:21:45 +0700] 174548290565.900227 172.20.0.1 42274 172.20.0.4 80
+---XoElBuhX---B--
+GET / HTTP/1.1
+Sec-Fetch-User: ?1
+sec-ch-ua: "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+Sec-Fetch-Site: none
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+sec-ch-ua-mobile: ?0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Mode: navigate
+Connection: keep-alive
+Host: localhost:9090
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Cookie: opencti_session=s%3AWbrH3Y3xiZBSaF9ysRYnNvOIFvaOCPPg.orvEL32bqnp28t39RJV6c3QTcj2bbwA%2Fujw6d%2BdHoG8
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,id;q=0.7
+
+---XoElBuhX---D--
+
+---XoElBuhX---F--
+HTTP/1.1 403
+
+---XoElBuhX---H--
+ModSecurity: Access denied with code 403 (phase 1). Matched "Operator `Rx' with parameter `172.20.0.1' against variable `REMOTE_ADDR' (Value: `172.20.0.1' ) [file "/etc/nginx/modsec/modsecurity.conf"] [line "19"] [id "1000003"] [rev ""] [msg "Blocked Docker Host IP"] [data ""] [severity "0"] [ver ""] [maturity "0"] [accuracy "0"] [hostname "172.20.0.4"] [uri "/"] [unique_id "174548290565.900227"] [ref "o0,10v0,10"]
+
+---XoElBuhX---I--
+
+---XoElBuhX---J--
+
+---XoElBuhX---Z--
+
+---6MPE1ELE---A--
+[24/Apr/2025:15:21:45 +0700] 174548290553.336980 172.20.0.1 42274 172.20.0.4 80
+---6MPE1ELE---B--
+GET /favicon.ico HTTP/1.1
+Referer: http://localhost:9090/
+sec-ch-ua-platform: "Windows"
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-ch-ua: "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Host: localhost:9090
+Accept-Encoding: gzip, deflate, br, zstd
+Cookie: opencti_session=s%3AWbrH3Y3xiZBSaF9ysRYnNvOIFvaOCPPg.orvEL32bqnp28t39RJV6c3QTcj2bbwA%2Fujw6d%2BdHoG8
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,id;q=0.7
+
+---6MPE1ELE---D--
+
+---6MPE1ELE---F--
+HTTP/1.1 403
+
+---6MPE1ELE---H--
+ModSecurity: Access denied with code 403 (phase 1). Matched "Operator `Rx' with parameter `172.20.0.1' against variable `REMOTE_ADDR' (Value: `172.20.0.1' ) [file "/etc/nginx/modsec/modsecurity.conf"] [line "19"] [id "1000003"] [rev ""] [msg "Blocked Docker Host IP"] [data ""] [severity "0"] [ver ""] [maturity "0"] [accuracy "0"] [hostname "172.20.0.4"] [uri "/favicon.ico"] [unique_id "174548290553.336980"] [ref "o0,10v0,10"]
+
+---6MPE1ELE---I--
+
+---6MPE1ELE---J--
+
+---6MPE1ELE---Z--
+
