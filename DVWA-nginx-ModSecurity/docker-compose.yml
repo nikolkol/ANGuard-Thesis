@@ -18,7 +18,7 @@ services:
       - dvwa_app_data:/var/www/html
 
   db:
-    image: mysql:5.7  # You can also use mariadb:10.5 if preferred
+    image: mysql:5.7  
     container_name: dvwa-db
     restart: always
     environment:
