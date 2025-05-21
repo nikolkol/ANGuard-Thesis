@@ -15,7 +15,7 @@ git clone https://github.com/nikolkol/ANGuard-Thesis.git
 cd ANGuard-Thesis
 ```
 
-### 2. Edit .env file inside both folder
+### 2. Edit .env file inside folder OpenCTI
 
 ### 3. Deploy OpenCTI locally
 ```bash
@@ -23,7 +23,7 @@ cd opencti
 docker-compose up -d
 ```
 
-### 4. Start WAF Environment (NGINX + ModSecurity + CRS)
+### 4. Start WAF Environment (NGINX + ModSecurity + DVWA)
 ```bash
 cd DVWA-nginx-ModSecurity
 docker-compose up -d
@@ -40,9 +40,9 @@ python import_logging.py
 python import_logging.py
 ```
 ### 7. Configure Telegram Bot for Alerts 
-1. Buat bot di BotFather dan ambil token-nya.
-2. Tambahkan TELEGRAM_TOKEN dan TELEGRAM_CHAT_ID ke file .env.
-3. Pastikan webhook alert sudah aktif di import_logging.py.
+1. Make bot at BotFather and copy the token.
+2. Add TELEGRAM_TOKEN and TELEGRAM_CHAT_ID to  .env file.
+3. Make sure webhook alert is activated inside file import_logging.py.
 
 ### 8. Run Telegram Alert Script
 ```bash
